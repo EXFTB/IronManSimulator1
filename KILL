@@ -1,0 +1,18 @@
+while true do
+    
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Suit.RightHand.Gun,
+    [2] = game:GetService("Players").PLAYERYOUWISHTOKILL.Character.Head,
+    [3] = Vector3.new(226.9022216796875, 537.3590698242188, -344.8209533691406),
+    [4] = 600
+}
+
+game:GetService("Players").LocalPlayer.Backpack.suitControl.Assets.Events.fireGun:FireServer(unpack(args))
+
+wait(0.1)
+
+
+end
+
+
+--NOTE THAT THIS IS FOR WARMACHINE, im too lazy to release the other one
